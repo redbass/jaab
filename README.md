@@ -6,14 +6,14 @@ This application is a basic example of Flask and Angular integration. The backen
 
 
 ## How to start the app:
-To run the app follow the next steps:
+To run the app follow the steps:
 
 - Install python dependencies:
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 - Populate base db:
-    python bin/populate_db.py
+    `python bin/populate_db.py`
 - Run application:
-    python app.py
+    `python app.py`
     
 To see the application running open a browser at the address
     http://localhost:5000/#/companies
@@ -21,12 +21,21 @@ To see the application running open a browser at the address
   
 The API are: 
 
-- GET - http://localhost:5000/api/v1/company - Get companies
-- GET - http://localhost:5000/api/v1/company/<id> - Get company
+- GET - [http://localhost:5000/api/v1/company]() - Get companies
+- GET - [http://localhost:5000/api/v1/company/\<id\>]() - Get company
 - POST - [http://localhost:5000/api/v1/company/\<id\>/employee]() - add a new employee
 - POST - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - update an employee
 - DELETE - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - delete an employee
 - GET - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - get an employee
+
+## How to run the tests
+To run the tests follow the steps:
+
+- Install Test dependencies:
+    `pip install -r requirements.test.txt`
+- Run tests:
+    `pytest test/`
+
 
 ## Final consideration
 Probably Angular is not the quickest solution for this type of project, is a
