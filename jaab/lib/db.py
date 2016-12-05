@@ -23,23 +23,23 @@ def get_employee(company_id, employee_id):
     employees = get_company(company_id)
 
     if employee_id < len(employees):
-        return employees[employee_id]
+        return employees["employees"][employee_id]
 
     return None
 
 
 def add_employee(company_id, employee):
-
-    employees = get_company(company_id)
+    company = get_company(company_id)
+    employees = company['employees']
     employees.append(employee)
-
     companies.update({"employees": employees}, where('id') == company_id)
 
     return employees
 
 
 def update_employee(company_id, employee_id, employee):
-    employees = get_company(company_id)
+    company = get_company(company_id)
+    employees = company['employees']
     employees[employee_id] = employee
 
     companies.update({"employees": employees}, where('id') == company_id)

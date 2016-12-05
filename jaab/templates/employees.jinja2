@@ -16,7 +16,7 @@
             <tr ng-repeat="emp in employees"
                 class="company-row"
                 ng-click="selectEmployee(emp)"
-                ng-class="{'success': employee.id == emp.id}"
+                ng-class="{'success': employee == emp}"
                 ng-click="selectCompany(emp)">
                 <td>[[$index + 1 ]]</td>
                 <td>[[emp.name]]</td>
