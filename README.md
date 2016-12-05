@@ -23,10 +23,10 @@ The API are:
 
 - GET - http://localhost:5000/api/v1/company - Get companies
 - GET - http://localhost:5000/api/v1/company/<id> - Get company
-- POST - [http://localhost:5000/api/v1/company/<id>/employee]() - add a new employee
-- POST - [http://localhost:5000/api/v1/company/<id>/employee/<eid>]() - update an employee
-- DELETE - [http://localhost:5000/api/v1/company/<id>/employee]() - delete an employee
-- GET - [http://localhost:5000/api/v1/company/<id>/employee]() - get an employee
+- POST - [http://localhost:5000/api/v1/company/\<id\>/employee]() - add a new employee
+- POST - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - update an employee
+- DELETE - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - delete an employee
+- GET - [http://localhost:5000/api/v1/company/\<id\>/employee/\<eid\>]() - get an employee
 
 ## Final consideration
 Probably Angular is not the quickest solution for this type of project, is a
