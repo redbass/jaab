@@ -1,0 +1,24 @@
+[
+  {
+    "_id": 1,
+    "name": "DIAL",
+    "description": "",
+    "tel": [],
+    "address": "",
+    "logo": "",
+    "email": "",
+
+    "employees": [
+      {
+        "_id": "",
+        "name": "",
+        "middle_name": "",
+        "surname": "",
+        "role": "",
+        "address": "",
+        "tel": [],
+        "email": ""
+      }
+    ]
+  }
+]
